@@ -137,7 +137,7 @@ export default function Index() {
             className="font-cormorant text-xl font-light tracking-widest"
             style={{ color: "var(--text-dark)" }}
           >
-            Анастасия
+            Алёна Мелешкина
             <span className="font-nunito text-xs ml-2" style={{ color: "var(--rose)", letterSpacing: "0.15em" }}>
               художник
             </span>
@@ -487,7 +487,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
             <div>
-              <div className="font-cormorant text-2xl font-light text-white mb-2">Анастасия</div>
+              <div className="font-cormorant text-2xl font-light text-white mb-2">Алёна Мелешкина</div>
               <div className="font-nunito text-xs uppercase tracking-[0.2em] mb-4" style={{ color: "var(--rose)" }}>Художник-терапевт</div>
               <p className="font-nunito font-light text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.45)" }}>
                 Создаю картины, которые помогают исцелиться, обрести себя и двигаться вперёд.
@@ -511,14 +511,14 @@ export default function Index() {
             <div>
               <div className="font-nunito text-xs uppercase tracking-widest mb-5" style={{ color: "rgba(255,255,255,0.35)" }}>Контакты</div>
               <div className="flex flex-col gap-4">
-                <a href="mailto:art@example.com" className="flex items-center gap-3 font-nunito text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
-                  <Icon name="Mail" size={15} /> art@example.com
+                <a href="mailto:Falcon_power@mail.ru" className="flex items-center gap-3 font-nunito text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
+                  <Icon name="Mail" size={15} /> Falcon_power@mail.ru
                 </a>
-                <a href="#" className="flex items-center gap-3 font-nunito text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
-                  <Icon name="Instagram" size={15} /> @anastasia_art
+                <a href="https://t.me/walnut_paradise" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-nunito text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
+                  <Icon name="MessageCircle" size={15} /> @walnut_paradise
                 </a>
-                <a href="#" className="flex items-center gap-3 font-nunito text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
-                  <Icon name="MessageCircle" size={15} /> Telegram
+                <a href="https://vk.com/lyyria_govorit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-nunito text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
+                  <Icon name="Users" size={15} /> ВКонтакте
                 </a>
               </div>
             </div>
@@ -528,7 +528,7 @@ export default function Index() {
             style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
           >
             <p className="font-nunito text-xs" style={{ color: "rgba(255,255,255,0.25)" }}>
-              © 2026 Анастасия. Все права защищены.
+              © 2026 Алёна Мелешкина. Все права защищены.
             </p>
             <p className="font-nunito text-xs italic" style={{ color: "rgba(255,255,255,0.2)" }}>
               Каждая картина рождается из любви
