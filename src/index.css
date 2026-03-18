@@ -135,26 +135,26 @@
 .watercolor-bg {
   background:
     radial-gradient(
-      ellipse at 20% 10%,
-      rgba(232, 167, 184, 0.18) 0%,
+      ellipse at 85% 10%,
+      rgba(232, 167, 184, 0.5) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 15% 25%,
+      rgba(168, 200, 224, 0.45) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 70% 75%,
+      rgba(168, 200, 224, 0.35) 0%,
       transparent 50%
     ),
     radial-gradient(
-      ellipse at 80% 20%,
-      rgba(168, 200, 224, 0.2) 0%,
-      transparent 50%
+      ellipse at 20% 80%,
+      rgba(232, 167, 184, 0.4) 0%,
+      transparent 45%
     ),
-    radial-gradient(
-      ellipse at 50% 80%,
-      rgba(232, 167, 184, 0.12) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      ellipse at 10% 90%,
-      rgba(168, 200, 224, 0.15) 0%,
-      transparent 50%
-    ),
-    #fdfafb;
+    #f9e4eb;
 }
 
 /* Fade in animation */
