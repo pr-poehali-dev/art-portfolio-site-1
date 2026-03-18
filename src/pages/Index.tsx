@@ -144,7 +144,7 @@ export default function Index() {
           </button>
 
           <div className="hidden md:flex items-center gap-8">
-            {[["portfolio", "Портфолио"], ["about", "О мне"], ["services", "Услуги"], ["reviews", "Отзывы"], ["order", "Заказать"]].map(([id, label]) => (
+            {[["portfolio", "Портфолио"], ["about", "Обо мне"], ["services", "Услуги"], ["reviews", "Отзывы"], ["order", "Заказать"]].map(([id, label]) => (
               <button key={id} onClick={() => scrollTo(id)} className="nav-link">{label}</button>
             ))}
           </div>
@@ -156,7 +156,7 @@ export default function Index() {
 
         {menuOpen && (
           <div className="md:hidden bg-white/95 backdrop-blur-md border-t px-6 py-6 flex flex-col gap-5" style={{ borderColor: "rgba(232,167,184,0.15)" }}>
-            {[["portfolio", "Портфолио"], ["about", "О мне"], ["services", "Услуги"], ["reviews", "Отзывы"], ["order", "Заказать"]].map(([id, label]) => (
+            {[["portfolio", "Портфолио"], ["about", "Обо мне"], ["services", "Услуги"], ["reviews", "Отзывы"], ["order", "Заказать"]].map(([id, label]) => (
               <button key={id} onClick={() => scrollTo(id)} className="nav-link text-left">{label}</button>
             ))}
           </div>
@@ -277,7 +277,7 @@ export default function Index() {
           <RevealSection>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div>
-                <p className="font-nunito text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--rose)" }}>О мне</p>
+                <p className="font-nunito text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--rose)" }}>Обо мне</p>
                 <h2 className="font-cormorant text-5xl font-light leading-tight mb-6" style={{ color: "var(--text-dark)" }}>
                   Искусство как <em>язык души</em>
                 </h2>
@@ -496,7 +496,7 @@ export default function Index() {
             <div>
               <div className="font-nunito text-xs uppercase tracking-widest mb-5" style={{ color: "rgba(255,255,255,0.35)" }}>Разделы</div>
               <div className="flex flex-col gap-3">
-                {[["portfolio", "Портфолио"], ["about", "О мне"], ["services", "Услуги"], ["reviews", "Отзывы"], ["order", "Заказать"]].map(([id, label]) => (
+                {[["portfolio", "Портфолио"], ["about", "Обо мне"], ["services", "Услуги"], ["reviews", "Отзывы"], ["order", "Заказать"]].map(([id, label]) => (
                   <button
                     key={id}
                     onClick={() => scrollTo(id)}
