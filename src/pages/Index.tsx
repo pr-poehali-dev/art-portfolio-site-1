@@ -185,7 +185,7 @@ export default function Index() {
             className="font-cormorant text-6xl md:text-8xl font-light leading-tight mb-6 animate-fade-in-up"
             style={{ color: "var(--text-dark)", animationDelay: "0.25s", opacity: 0 }}
           >
-            <em className="font-light" style={{ color: "var(--rose)" }}>Картины,</em>
+            <em className="font-light" style={{ color: "var(--text-dark)" }}>Картины,</em>
             <br />
             <em className="font-light" style={{ color: "var(--rose)" }}>которые исцеляют</em>
           </h1>
