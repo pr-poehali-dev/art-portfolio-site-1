@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const IMAGES = {
-  painting1: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/files/7133e114-6dcb-41da-ac29-61e50538c0f1.jpg",
-  painting2: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/files/6aca0f2c-112c-46b8-a3e5-11af7c15637b.jpg",
-  painting3: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/files/94b73c74-6c52-4214-8dbe-9d5c63ac2680.jpg",
+  painting1: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/bucket/a869a2b0-74b4-4d5a-86e1-eda1b55f60d4.jpg",
+  painting2: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/bucket/0041b4bf-e524-490d-9ad2-0ea6f98c9c75.jpg",
+  painting3: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/bucket/fa2ecb2e-6289-4f65-89e2-6329d0674b82.jpg",
+  painting4: "https://cdn.poehali.dev/projects/0fbc1966-8751-4732-9e58-d4bd044585a5/bucket/78d2bf83-6633-4fed-9c9a-f59a84866ae5.jpg",
 };
 
 const PAINTINGS = [
@@ -17,14 +18,14 @@ const PAINTINGS = [
   },
   {
     id: 2,
-    image: IMAGES.painting2,
+    image: IMAGES.painting3,
     title: "Путь к себе",
     theme: "Самоопределение",
     description: "Картина для тех, кто стоит на пороге нового этапа жизни.",
   },
   {
     id: 3,
-    image: IMAGES.painting3,
+    image: IMAGES.painting4,
     title: "Свет внутри",
     theme: "Исцеление",
     description: "Нежный образ для отпускания боли и обретения покоя.",
