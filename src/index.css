@@ -5,10 +5,10 @@
 @layer base {
   :root {
     --background: 0 0% 99%;
-    --foreground: 340 15% 25%;
+    --foreground: 205 50% 30%;
 
     --card: 0 0% 100%;
-    --card-foreground: 340 15% 25%;
+    --card-foreground: 205 50% 30%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 340 15% 25%;
@@ -42,9 +42,9 @@
     --blue-light: #d0e8f5;
     --blue-pale: #eef6fc;
     --gold: #c9a87a;
-    --text-dark: #3d2d35;
-    --text-mid: #7a6370;
-    --text-light: #b0a0a8;
+    --text-dark: #1a3a5c;
+    --text-mid: #4a7090;
+    --text-light: #8aaec8;
 
     --sidebar-background: 330 20% 97%;
     --sidebar-foreground: 340 15% 25%;
