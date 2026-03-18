@@ -4,89 +4,56 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 99%;
+    --foreground: 340 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 340 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 340 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 40% 72%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 205 45% 82%;
+    --secondary-foreground: 205 30% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 330 20% 96%;
+    --muted-foreground: 340 10% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 205 45% 90%;
+    --accent-foreground: 205 30% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 330 20% 90%;
+    --input: 330 20% 90%;
+    --ring: 340 40% 72%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* custom palette */
+    --rose: #e8a7b8;
+    --rose-light: #f5d5e0;
+    --rose-pale: #fdf0f4;
+    --blue: #a8c8e0;
+    --blue-light: #d0e8f5;
+    --blue-pale: #eef6fc;
+    --gold: #c9a87a;
+    --text-dark: #3d2d35;
+    --text-mid: #7a6370;
+    --text-light: #b0a0a8;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 330 20% 97%;
+    --sidebar-foreground: 340 15% 25%;
+    --sidebar-primary: 340 40% 72%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 205 45% 90%;
+    --sidebar-accent-foreground: 205 30% 30%;
+    --sidebar-border: 330 20% 90%;
+    --sidebar-ring: 340 40% 72%;
   }
 }
 
@@ -95,7 +62,275 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
   }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Cormorant", serif;
+  }
+}
+
+@layer utilities {
+  .font-cormorant {
+    font-family: "Cormorant", serif;
+  }
+  .font-cormorant-garamond {
+    font-family: "Cormorant Garamond", serif;
+  }
+  .font-nunito {
+    font-family: "Nunito", sans-serif;
+  }
+
+  .text-rose {
+    color: var(--rose);
+  }
+  .text-gold {
+    color: var(--gold);
+  }
+  .text-dark {
+    color: var(--text-dark);
+  }
+  .text-mid {
+    color: var(--text-mid);
+  }
+  .text-light-muted {
+    color: var(--text-light);
+  }
+
+  .bg-rose-pale {
+    background-color: var(--rose-pale);
+  }
+  .bg-blue-pale {
+    background-color: var(--blue-pale);
+  }
+  .bg-rose-light {
+    background-color: var(--rose-light);
+  }
+  .bg-blue-light {
+    background-color: var(--blue-light);
+  }
+
+  .border-rose {
+    border-color: var(--rose);
+  }
+  .border-blue {
+    border-color: var(--blue);
+  }
+  .border-gold {
+    border-color: var(--gold);
+  }
+}
+
+/* Watercolor bg texture */
+.watercolor-bg {
+  background:
+    radial-gradient(
+      ellipse at 20% 10%,
+      rgba(232, 167, 184, 0.18) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(168, 200, 224, 0.2) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 50% 80%,
+      rgba(232, 167, 184, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 10% 90%,
+      rgba(168, 200, 224, 0.15) 0%,
+      transparent 50%
+    ),
+    #fdfafb;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+.animate-fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+.animate-float {
+  animation: floatSoft 6s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+/* Painting card hover */
+.painting-card {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.painting-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 24px 60px rgba(232, 167, 184, 0.3),
+    0 8px 20px rgba(168, 200, 224, 0.2);
+}
+
+/* Section reveal */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+/* Decorative line */
+.deco-line {
+  display: inline-block;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--rose), var(--blue));
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+/* Gold underline for headings */
+.heading-underline {
+  position: relative;
+  display: inline-block;
+}
+.heading-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--rose), var(--blue));
+}
+
+/* Smooth scroll nav link */
+.nav-link {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  transition: color 0.3s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--rose);
+  transition: width 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--text-dark);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button styles */
+.btn-rose {
+  background: linear-gradient(135deg, var(--rose) 0%, #d4849a 100%);
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 14px 36px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-rose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(232, 167, 184, 0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-dark);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 13px 36px;
+  border-radius: 50px;
+  border: 1px solid var(--rose);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-outline:hover {
+  background: var(--rose-pale);
+  transform: translateY(-2px);
 }
